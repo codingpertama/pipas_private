@@ -1,0 +1,422 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Base Styles */
+:root {
+  --primary-color: #1a472a;
+  --secondary-color: #2d6a4f;
+  --accent-color: #40916c;
+  --light-color: #d8f3dc;
+  --text-color: #333333;
+  --text-light: #f8f9fa;
+  --gold-accent: #d4af37;
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.icon_search{
+    background-color: #42f48991;
+    color:#007e0f;
+}
+
+.btn_login {
+    background-color: #42f48991;
+    color:#007e0f;
+    border-radius: 100px;
+    font-weight:600;
+}
+
+/* Contact Container */
+.containermail {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.judul11 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.judul11::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold-accent), transparent);
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+/* Social Section */
+.social-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.social-section:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-color);
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--gold-accent);
+}
+
+.cname {
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 1.8rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-btn i {
+  margin-right: 12px;
+  font-size: 1.3rem;
+}
+
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+}
+
+.instagram-btn {
+  background: linear-gradient(135deg, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737);
+  color: white;
+}
+
+.facebook-btn {
+  background: linear-gradient(135deg, #1877F2, #0A58CA);
+  color: white;
+}
+
+.social-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Email Section */
+.email-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.email-section:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.8rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  font-size: 1.05rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  transition: var(--transition);
+  background: #f8f9fa;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.2);
+  background: white;
+}
+
+.form-group textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 20px rgba(26, 71, 42, 0.3);
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.submit-btn i {
+  margin-right: 12px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(26, 71, 42, 0.4);
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+/* Improved hover effect where text remains visible */
+.submit-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  border-radius: 50px;
+  opacity: 0;
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.submit-btn:hover::after {
+  opacity: 1;
+}
+
+.submit-btn span,
+.submit-btn i {
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 4rem 5%;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+footer p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+footer nav {
+  margin-bottom: 2.5rem;
+}
+
+footer a {
+  transition: var(--transition);
+  position: relative;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+footer a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold-accent);
+  transition: var(--transition);
+}
+
+footer a:hover::after {
+  width: 100%;
+}
+
+footer div {
+  margin: 2rem 0;
+}
+
+footer div p {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--light-color);
+  font-size: 1.1rem;
+}
+
+footer div a {
+  color: white;
+  text-decoration: none;
+  transition: var(--transition);
+  margin: 0 0.8rem;
+}
+
+footer div a:hover {
+  color: var(--gold-accent);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .containermail {
+    margin: 3rem auto;
+  }
+
+  .judul11 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .social-section,
+  .email-section {
+    padding: 2rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.containermail {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.social-section {
+  animation: fadeIn 1s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.email-section {
+  animation: fadeIn 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}

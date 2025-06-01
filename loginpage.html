@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Halaman Login</title>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card" id="authCard">
+            <a href="index.html" class="back-button">←</a>
+            
+            <div class="toggle-options">
+                <button class="toggle-btn active" id="loginToggle">Masuk</button>
+                <div class="divider"></div>
+                <button class="toggle-btn" id="signupToggle">Daftar</button>
+            </div>
+            
+            <div class="auth-forms">
+                <div class="login-form">
+                    <h2>Selamat Datang Kembali</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="login-email">Alamat E-mail</label>
+                            <input type="email" id="login-email" placeholder="contoh@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Kata Sandi</label>
+                            <input type="password" id="login-password" placeholder="••••••••••">
+                        </div>
+                        <a href="#" class="forgot-password">Lupa Kata Sandi?</a>
+                        <button type="submit" class="submit-btn">Masuk</button>
+                    </form>
+
+                    <div class="social-login">
+                        <div class="social-text">Atau Lanjutkan Dengan</div>
+                        <div class="social-icons">
+                            <div class="social-icon">G</div>
+                            <div class="social-icon">f</div>
+                            <div class="social-icon">in</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="signup-form">
+                    <h2>Buat Akun</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="signup-name">Nama Lengkap</label>
+                            <input type="text" id="signup-name" placeholder="Dedi Mulyadi">
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Alamat E-mail</label>
+                            <input type="email" id="signup-email" placeholder="contoh@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Kata Sandi</label>
+                            <input type="password" id="signup-password" placeholder="••••••••••">
+                        </div>
+                        <button type="submit" class="submit-btn">Daftar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

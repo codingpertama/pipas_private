@@ -1,0 +1,217 @@
+:root {
+  --main-color: #00aa13;
+  --main-color-light: #ffff;
+  --strip-color: #b60303;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.icon_search {
+  background-color: #42f48991;
+  color: #007e0f;
+}
+
+.btn_login {
+  background-color: #42f48991;
+  color: #007e0f;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.btn_login:hover {
+  background-color: #42f489cd;
+  color: #007e0f;
+}
+
+.jumbotron-bg {
+  background-image: url(../img/jumbotron.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  height: 430px;
+  margin: 5px;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.btn_map {
+  background-color: #42f48991;
+  color: #007e0f;
+  padding: 35px 70px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  max-width: 90%; /* biar kalau teks-nya panjang, tetap gak melebihi layar */         /* Ganti jadi full (bisa diatur max-width-nya) */
+  text-align: left;
+  box-sizing: border-box; /* Penting biar padding gak nambahin lebar */
+}
+
+#alamat {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: inline-block;
+  word-wrap: break-word;
+  max-width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.jelajah {
+  background-color: #00aa13;
+  color: white;
+}
+
+.jelajah:hover {
+  background-color: #008a10;
+  transition: all 0.3s ease;
+}
+
+/* ✅ Media query untuk layar kecil */
+@media (max-width: 576px) {
+  .btn_map {
+    padding: 20px;
+    font-size: 0.9rem;
+    width: 95%;              /* Biar lebih dekat ke full width */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #alamat {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    width: 100%;
+    display: block;
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 16px 0 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 16px 12px;
+}
+
+.price {
+  display: block;
+  font-size: 18px;
+  color: #e91e63;
+  margin-bottom: 12px;
+}
+
+.buy-btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.buy-btn:hover {
+  background-color: #e91e63;
+}
+
+.scroll-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 30px 20px;
+  background: #f0fdf4; /* Hijau muda lembut */
+  border-radius: 12px;
+}
+
+.scroll-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-slider::-webkit-scrollbar-thumb {
+  background-color: #a5d6a7;
+  border-radius: 10px;
+}
+
+.product {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 150px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0, 100, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
